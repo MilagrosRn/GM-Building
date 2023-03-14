@@ -4,6 +4,27 @@
             <img src="" alt="">
         </div>
         <div class="form-container">
+            <form class="example-form" [formGroup]="loginForm">
+                <mat-form-field appearance="fill">
+                <mat-label>Nombre de usuario</mat-label>
+                  <input type="text" matInput formControlName="username" class="form-control" id="username" >
+                  <mat-error *ngIf="username.hasError('required')">
+                    Este campo es <strong>requirido</strong>
+                  </mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Contraseña</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" class="form-control" id="password" >
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                  </mat-form-field>
+                
+                  
+                    <mat-checkbox formControlName="remember" class="form-control">Recordarme</mat-checkbox>
+           
+              </form>
+              
 
         </div>
         <div class="button-cointainer">
