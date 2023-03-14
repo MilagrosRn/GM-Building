@@ -8,6 +8,10 @@ import { AssessorComponent } from './views/assessor/assessor.component';
 import { NavigationBarComponent } from './components/organisms/navigation-bar/navigation-bar.component';
 import { FooterComponent } from './components/organisms/footer/footer.component';
 import {MatButtonModule} from '@angular/material/button';
+import { ViewLoginComponent } from './components/templates/view-login/view-login.component';
+import { AppRoutingModule } from './app.routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input'
 
 @NgModule({
   declarations: [
@@ -16,12 +20,17 @@ import {MatButtonModule} from '@angular/material/button';
     AssessorComponent,
     NavigationBarComponent,
     FooterComponent,
+    ViewLoginComponent,
     
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
