@@ -1,10 +1,60 @@
+@import "../../../../styles.scss";
 *{
     margin: 0;
     padding: 0;
+    font-size: 1.05em;
+    font-family: "Myriadpro-regular";
+    font-style: normal;
+    font-weight: 400;
 }
 
 .footer-section{
-    background-image: url('../../../../assets/images/background-footer.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  display: flex;
+  
+.contact-cointainer{
+        &-buttons{
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        z-index: 5;
+        position: absolute;
+        width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+            &-item{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: 0.85s all ease-in-out;
+                padding: 1%;
+                img{
+                    margin: 9px;
+                }
+            }
+            &-main-item {
+                
+                img{
+                width: 55px;
+               
+            }
+            label{
+                font-family: "Myriadpro-bold";
+            }
+        }
+            
+        }
+        &-background{
+            z-index: 1;   
+            position: relative;
+            width: 100%;
+            img{
+                width: 100%;
+                bottom: 0;
+            }
+        }
+    }
 }

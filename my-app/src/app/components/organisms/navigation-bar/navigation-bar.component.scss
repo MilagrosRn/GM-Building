@@ -1,7 +1,11 @@
+@import "../../../../styles.scss";
+
 *{
     margin: 0;
     padding: 0;
-    background-color: greenyellow;
+    font-family: "Myriadpro-regular";
+    font-style: normal;
+    font-weight: 400;
 }
 .header-section{
     padding-top: 1.5%;
@@ -9,7 +13,6 @@
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    
     align-items: center;
     .logo-container{
         display: flex;
@@ -29,7 +32,12 @@
         align-items: center;
         width: 20%;
         .button-login{
-            
+            min-width: 20%;
+            width:50%; 
+        background-color:$primary ;
+        color: $general;
+        font-size: 1.2em;
+        height: 50px;
         }
     }
 }

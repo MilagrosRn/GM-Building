@@ -6,20 +6,28 @@ html, body {
 body { 
     margin: 0;
     padding: 0;
-    font-family: Myriadpro-regular;
+    font-family: "Myriadpro-regular";
+    font-style: normal;
+    font-weight: 400;
 }
 
 @font-face {
-    font-family: Myriadpro-regular;
+    font-family: "Myriadpro-regular";
+    font-style: normal;
+    font-weight: 400;
     src: url("./assets/fonts/MYRIAD-PRO-FONT/MYRIADPRO-REGULAR.OTF");
 }
 @font-face {
-    font-family: Myriadpro-semibold;
+    font-family: "Myriadpro-semibold";
+    font-style: normal;
+    font-weight: 600;
     src: url("./assets/fonts/MYRIAD-PRO-FONT/MYRIADPRO-SEMIBOLD.OTF");
 }
 
 @font-face {
-    font-family: Myriadpro-bold;
+    font-family: "Myriadpro-bold";
+    font-style: normal;
+    font-weight: 800;
     src: url("./assets/fonts/MYRIAD-PRO-FONT/MYRIADPRO-BOLD.OTF");
 }
 
