@@ -24,7 +24,9 @@
     height: 100vh;
     
         &-form{
-       
+       display: flex;
+       flex-direction: column;
+       justify-content:  space-evenly;
             background-color: $general;
             opacity: 0.9;
             box-shadow: 5px 10px 5px 5px rgba(0, 0, 0, 0.4);    
@@ -33,50 +35,74 @@
             position: relative; 
             left: -5%;
             width: 44%;
-            height: 41vh;
-            padding: 5% 6% 5% 6%;
+            height: 40vh;
+            padding: 7% 6% 7% 6%;
 
             .logo-container{
                 display: flex;
                 justify-content: center;
-                width: 100%;
+               margin: 40px 0 20px 0;
             }
             .form-container{
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding-top: 1%;
-            height: 80%;
                 form{         
                    
                     .loginForm-inputs{
+margin: 4% 0 4% 0;
+
+
                         mat-form-field{
+                           margin: 0;
+
                             width: 100%;
-                            mat-icon{
+                            ::ng-deep {
+                            .mat-form-field-appearance-outline .mat-form-field-wrapper {
+                                 margin: 0;
+                            }
+                            .mat-form-field-wrapper {
+                                padding-bottom: 0.8rem;
+                            }
+                            .mat-form-field-appearance-outline .mat-form-field-infix {
+                                padding: 0.7em 0 9.2px 0;
+                            }
+                            
+                        }
+                        mat-icon{
                                 color: $secondary-tone-2;
                                 margin-right: 7px;
+                                //width: 2px;
 
                             }
                         }
+
+
+                        mat-form-field:first-child{
+                        }
+                        mat-form-field:last-child{
+                        }
                     }
                     .loginForm-actions-about-form{
+ margin: 5px 0 5px 0;
                         display: flex;
                         justify-content: space-between;
                         color: $secondary-tone-2;
 
                     }
                     .loginForm-button{
+margin: 5px 0 5px 0;
                         display: flex;
                         justify-content: center;
-                        top: 2%;
+                      top: 2%;
                         button{
                          background-color: $primary;
                          color: $general;
                          width: 170px;
                          border-radius: 6px;
                          height: 48px;
-                         margin-top: 30px;
+                         margin: 30px 0 30px 0;
                         }
                        
                     }
