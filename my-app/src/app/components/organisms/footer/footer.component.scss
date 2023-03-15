@@ -22,7 +22,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-
+        top: 1%;
             &-item{
                 display: flex;
                 flex-wrap: nowrap;
@@ -33,12 +33,14 @@
                 padding: 1%;
                 img{
                     margin: 9px;
+                    width: 39px;
+
                 }
             }
             &-main-item {
                 
                 img{
-                width: 55px;
+                width: 50px;
                
             }
             label{
