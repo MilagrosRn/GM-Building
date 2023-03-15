@@ -1,15 +1,55 @@
 <section class="view-login">
-    <div class="form-login">
-        <div class="logo-container">
-            <img src="" alt="">
-        </div>
-        <div class="form-container">
+  <!--  <div class="background-login">
+        <img src="../../../../assets/images/background-login.svg" alt="">
+    </div> -->
+    <div class="section-login">
 
+        <div class="section-login-form">
+            <div class="logo-container">
+                <img src="../../../../assets/images/logo-name.svg" alt="">
+            </div>
+            <div class="form-container">
+
+                <form [formGroup]="loginForm" (ngSubmit)="save($event)">
+                    <div class="loginForm-inputs">
+                        <mat-form-field class="form-container-field" appearance="outline">
+                            <mat-label class="form-container-field-label">Nombre de usuario</mat-label>
+                            <span matPrefix>
+                                <mat-icon>mail</mat-icon>
+                            </span>
+                            <input matInput type="text" formControlName="username" autocomplete="off">
+                        </mat-form-field>
+
+                        <mat-form-field class="form-container-field" appearance="outline">
+                            <mat-label class="form-container-field-label">Contraseña</mat-label>
+                            <span matPrefix>
+                                <mat-icon>lock</mat-icon>
+                            </span>
+                            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password"
+                                autocomplete="off">
+                            <button mat-icon-button matSuffix (click)="hide=!hide">
+                                <mat-icon>{{hide? 'visibility_off':'visibility'}}</mat-icon>
+                            </button>
+                        </mat-form-field>
+                    </div>
+                    
+                    <div class="loginForm-actions-about-form">
+                        <mat-checkbox formControlName="rememberme">Recordarme</mat-checkbox>
+                        <span>¿Olvidó su contraseña?</span>
+                    </div>
+
+                    <div class="loginForm-button">
+                        <button mat-raised-button class="button-login" type="submit">
+                        INICIAR SESION</button>
+                    </div>
+
+                </form>
+            </div>
         </div>
-        <div class="button-cointainer">
-            <button mat-raised-button class="button-login">
-                Iniciar sesión
-            </button>
+    
+    </div> <p>Version 4.9.20</p>
+    <div class="section-login-version">
+           
         </div>
-    </div>
+        
 </section>

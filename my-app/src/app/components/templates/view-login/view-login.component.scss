@@ -1,0 +1,99 @@
+@import "../../../../styles.scss";
+
+
+.view-login{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../../../../assets/images/background-login.svg') ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+    overflow: hidden;
+    z-index: 1;
+    
+    .section-login{
+        z-index: 5;
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    
+        &-form{
+       
+            background-color: $general;
+            opacity: 0.9;
+            box-shadow: 5px 10px 5px 5px rgba(0, 0, 0, 0.4);    
+            border-radius: 36px;
+           
+            position: relative; 
+            left: -5%;
+            width: 44%;
+            height: 41vh;
+            padding: 5% 6% 5% 6%;
+
+            .logo-container{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+            .form-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 1%;
+            height: 80%;
+                form{         
+                   
+                    .loginForm-inputs{
+                        mat-form-field{
+                            width: 100%;
+                            mat-icon{
+                                color: $secondary-tone-2;
+                                margin-right: 7px;
+
+                            }
+                        }
+                    }
+                    .loginForm-actions-about-form{
+                        display: flex;
+                        justify-content: space-between;
+                        color: $secondary-tone-2;
+
+                    }
+                    .loginForm-button{
+                        display: flex;
+                        justify-content: center;
+                        top: 2%;
+                        button{
+                         background-color: $primary;
+                         color: $general;
+                         width: 170px;
+                         border-radius: 6px;
+                         height: 48px;
+                         margin-top: 30px;
+                        }
+                       
+                    }
+                }
+            }
+        }
+        &-version{
+color: $general;
+font-family: 'Myriadpro-bold';
+font-size: larger;
+position: relative; left: -5%;
+background-color: green
+        }
+    }
+}
+
+
+
+
+    
