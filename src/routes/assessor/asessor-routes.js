@@ -13,7 +13,7 @@ const assessorRoutesModule = (uri) => {
         case '#':
         case '#/':
         case '#/home': return seccion.appendChild(viewsModule.views.home());
-        default: return seccion.appendChild(node);
+        default: return seccion.appendChild(node);  
     }
 }
 
