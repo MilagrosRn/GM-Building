@@ -32,22 +32,33 @@
     </div>
     <div class="user-section">
       <box-icon class="i" name='xing'></box-icon>
+
     </div>
 
     <ul class="ul">
       <li class="icon-logo">
         <img src="assets-localy/logos/logo-1x.svg" alt="">
       </li>
+      <li class="icon-user i">
+        <div class="icon-user-container">
+          <img src="/assets-localy/icons/user.png" alt="">
+          <div class=" icon-user-container-description">
+            <span class="bold">Victor Mendieta</span>
+            <span>Administrador</span>
+            <div>
+              <img src="./assets-localy/icons/icon-edit-dark.svg" alt="">
+              <a href=""><span>Mi perfil</span></a>
+            </div>
+          </div>
+        </div>
+      </li>
       <li class="li">
 
         <a href="">
-
-        <img  class="i" src="/assets-localy/icons/icon-tag-dark.svg" alt="">
-        <div>
-          <span class="nav-item">Ventas</span>
-         
-        </div>
-        
+          <img class=" i" src="/assets-localy/icons/icon-tag-dark.svg" alt="">
+          <div>
+            <span class="nav-item">Ventas</span>
+          </div>
         </a>
 
         <span class="tooltip">
@@ -62,7 +73,7 @@
       </li>
       <li class="li">
         <a href="">
-          <img  class="i" src="/assets-localy/icons/icon-borrow-dark.svg" alt="">
+          <img class="i" src="/assets-localy/icons/icon-borrow-dark.svg" alt="">
           <span class="nav-item">Prestamos</span>
         </a>
         <span class="tooltip">
@@ -74,7 +85,7 @@
       </li>
       <li class="li">
         <a href="">
-          <img  class="i" src="/assets-localy/icons/icon-box-dark.svg" alt="">
+          <img class="i" src="/assets-localy/icons/icon-box-dark.svg" alt="">
           <span class="nav-item">Cajas</span>
         </a>
         <span class="tooltip">
@@ -85,7 +96,7 @@
       </li>
       <li class="li">
         <a href="">
-          <img  class="i" src="/assets-localy/icons/icon-lists-box-dark.svg" alt="">
+          <img class="i" src="/assets-localy/icons/icon-lists-box-dark.svg" alt="">
           <span class="nav-item">Cobros</span>
         </a>
         <span class="tooltip">
@@ -96,7 +107,7 @@
       </li>
       <li class="li">
         <a href="">
-          <img  class="i" src="/assets-localy/icons/icon-user-text.svg" alt="">
+          <img class="i" src="/assets-localy/icons/icon-user-text.svg" alt="">
           <span class="nav-item">RRHH</span>
         </a>
         <span class="tooltip">
@@ -107,7 +118,7 @@
       </li>
       <li class="li">
         <a href="">
-          <img  class="i" src="/assets-localy/icons/icon-account-dark.svg" alt="">
+          <img class="i" src="/assets-localy/icons/icon-account-dark.svg" alt="">
           <span class="nav-item">Contabilidad</span>
         </a>
         <span class="tooltip">
@@ -117,26 +128,60 @@
         </span>
       </li>
     </ul>
+    <div class="ul-end-fixed">
+      <ul class="ul">
+        <li class="li li-end-fixed">
+          <a href="">
+            <img class="i" src="/assets-localy/icons/icon _message question_.svg" alt="">
+            <span class="nav-item nav-end-fixed">Ayuda</span>
+          </a>
+          <span class="tooltip">
+            <ul>
+              <li class="submenu-item"><a href="#">Ayuda</a></li>
+            </ul>
+          </span>
+        </li>
+
+        <li class="li li-end-fixed">
+          <a href="">
+            <img class="i" src="/assets-localy/icons/icon-setting-dark.svg" alt="">
+            <span class="nav-item nav-end-fixed">Ajustes</span>
+          </a>
+          <span class="tooltip">
+            <ul>
+              <li class="submenu-item"><a href="#">Ajustes</a></li>
+            </ul>
+          </span>
+        </li>
+
+        <li class="li li-end-fixed">
+          <a href="">
+            <img class="i" src="/assets-localy/icons/icon-log-ou-dark.svg" alt="">
+            <span class="nav-item nav-end-fixed">Cerrar Sesión</span>
+          </a>
+          <span class="tooltip">
+            <ul>
+              <li class="submenu-item"><a href="#">Cerrar Sesión</a></li>
+            </ul>
+          </span>
+        </li>
+
+      </ul>
+    </div>
   </div>
 
   <div class="main-content">
     <!-- Navbar Transparent -->
-    <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none navbar-transparent">
+    <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none navbar-transparent ">
       <div class="container">
         <a class="navbar-brand  text-white " href="https://demos.creative-tim.com/material-kit/presentation"
           rel="tooltip" data-placement="bottom" target="_blank">
-
         </a>
         <div class="search-bar">
-          <div class="search-bar-item">
-           
-
-          
-              <input class="input" type="text" placeholder="¿Que estamos buscando?">
-              <box-icon name='search-alt-2'class="icon" ></box-icon>
-          
+          <div class="search-bar-item w-100">
+            <input class="input" type="text" placeholder="¿Que estamos buscando?">
+            <box-icon name='search-alt-2' class="icon"></box-icon>
           </div>
-          
         </div>
 
         <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
@@ -147,28 +192,36 @@
             <span class="navbar-toggler-bar bar3"></span>
           </span>
         </button>
-        <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0 ms-lg-12 ps-lg-5" id="navigation">
+        <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0 " id="navigation">
           <ul class="navbar-nav navbar-nav-hover ms-auto">
-            <li class="nav-item mx-2 ms-lg-6">
-              <a class="nav-link ps-2 d-flex cursor-pointer align-items-center">
-                <i class="material-icons opacity-6 me-2 text-md">description</i>
-                Reportes
+            <li class="nav-item mx-3 w-auto">
+              <a class="nav-link d-flex cursor-pointer align-items-center" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <div class="nav-icons-actions">
+                  <img src="./assets-localy/icons/icon-doc.svg" alt="">
+                  <span> Reportes</span>
+                </div>
+
               </a>
             </li>
 
-            <li class="nav-item mx-2">
-              <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <i class="material-icons opacity-6 me-2 text-md">map</i>
-                Ruteo
+            <li class="nav-item mx-3 w-auto">
+              <a class="nav-link justify-content-evenly d-flex cursor-pointer align-items-center"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="nav-icons-actions">
+                  <img src="./assets-localy/icons/icon-map.svg" alt="">
+                  <span> Ruteo</span>
+                </div>
               </a>
             </li>
 
-            <li class="nav-item mx-2">
-              <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <i class="material-icons opacity-6 me-2 text-md">notifications</i>
-                Notificaciones
+            <li class="nav-item mx-3">
+              <a class="nav-link justify-content-evenly d-flex cursor-pointer align-items-center"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="nav-icons-actions">
+                  <img src="./assets-localy/icons/icon-bell.svg" alt="">
+                  <span> Notificaciones</span>
+                </div>
               </a>
             </li>
 
@@ -177,7 +230,20 @@
       </div>
     </nav>
     <!-- End Navbar -->
-
+    <div class="container-float-button">
+      <input type="checkbox" id="btn-mas" class="float-button">
+      <div class="redes">
+        <a href="#">
+          <img src="./assets-localy/icons/icon-doc-add.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./assets-localy/icons/icon-bill.svg" alt="">
+        </a>
+      </div>
+      <div class="btn-mas">
+        <label for="btn-mas" class="fa fa-plus"></label>
+      </div>
+    </div>
   </div>
 
 

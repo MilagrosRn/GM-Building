@@ -1,1 +1,15 @@
-/*# sourceMappingURL=constants.css.map */
+@font-face {
+  font-family: "Myriadpro-regular";
+  font-style: normal;
+  src: url("../assets-localy/fonts/MYRIAD-PRO-FONT/MYRIADPRO-REGULAR.OTF");
+}
+@font-face {
+  font-family: "Myriadpro-semibold";
+  font-style: normal;
+  src: url("../assets-localy/fonts/MYRIAD-PRO-FONT/MYRIADPRO-SEMIBOLD.OTF");
+}
+@font-face {
+  font-family: "Myriadpro-bold";
+  font-style: normal;
+  src: url("../assets-localy/fonts/MYRIAD-PRO-FONT/MYRIADPRO-BOLD.OTF");
+}/*# sourceMappingURL=constants.css.map */

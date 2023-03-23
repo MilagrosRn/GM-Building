@@ -1,4 +1,23 @@
 $white:  #ffffff ;
 $primary: #9B0000;
+$red:#C60505;
 $soft-pink: #B64545;
+$dark-pink:#E44E4E;
 $dark: #110000;
+
+@font-face {
+    font-family: "Myriadpro-regular";
+    font-style: normal;
+    src: url("../assets-localy/fonts/MYRIAD-PRO-FONT/MYRIADPRO-REGULAR.OTF");
+}
+@font-face {
+    font-family: "Myriadpro-semibold";
+    font-style: normal;
+    src: url("../assets-localy/fonts/MYRIAD-PRO-FONT/MYRIADPRO-SEMIBOLD.OTF");
+}
+
+@font-face {
+    font-family: "Myriadpro-bold";
+    font-style: normal;
+    src: url("../assets-localy/fonts/MYRIAD-PRO-FONT/MYRIADPRO-BOLD.OTF");
+}
